@@ -23,7 +23,10 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+<<<<<<< HEAD
     "react-navigation": "^2.17.0",
+=======
+>>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
     "watchman": "^1.0.0"
   }
 }

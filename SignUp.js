@@ -1,11 +1,16 @@
 import React from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, Button, Image, TextInput, TouchableOpacity} from 'react-native';
 import { StackNavigator, createSwitchNavigator } from 'react-navigation';
+=======
+import { StyleSheet, Text, View, Button, Image, TextInput, TouchableOpacity } from 'react-native';
+>>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
 
 class SignUp extends React.Component {
 
   render(){
     return (
+<<<<<<< HEAD
       <View style={styles.container}>
         <View>
           <TextInput
@@ -32,10 +37,15 @@ class SignUp extends React.Component {
             <Text>Submit</Text>
           </TouchableOpacity>
         </View>
+=======
+      <View>
+      <Text>TEST</Text>
+>>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
       </View>
     )
   }
 }
+<<<<<<< HEAD
 
 const styles = StyleSheet.create({
   container: {
@@ -75,3 +85,5 @@ const styles = StyleSheet.create({
 
 
 export default SignUp;
+=======
+>>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
