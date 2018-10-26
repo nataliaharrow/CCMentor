@@ -1,16 +1,11 @@
 import React from 'react';
-<<<<<<< HEAD
 import { StyleSheet, Text, View, Button, Image, TextInput, TouchableOpacity} from 'react-native';
 import { StackNavigator, createSwitchNavigator } from 'react-navigation';
-=======
-import { StyleSheet, Text, View, Button, Image, TextInput, TouchableOpacity } from 'react-native';
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
 
 class SignUp extends React.Component {
 
   render(){
     return (
-<<<<<<< HEAD
       <View style={styles.container}>
         <View>
           <TextInput
@@ -34,23 +29,18 @@ class SignUp extends React.Component {
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('HomeScreen')}
             style={styles.btn}>
-            <Text>Submit</Text>
+            <Text style={styles.txt}>GET STARTED</Text>
           </TouchableOpacity>
         </View>
-=======
-      <View>
-      <Text>TEST</Text>
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
       </View>
     )
   }
 }
-<<<<<<< HEAD
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#00c6ff',
+    backgroundColor: '#E0F0F2',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -70,10 +60,13 @@ const styles = StyleSheet.create({
     marginTop: 100,
     height: 50,
     justifyContent: 'center',
+    borderRadius:15,
   },
   input: {
-    borderWidth: 1,
+    color: 'black',
+    borderWidth: 0,
     borderColor: 'black',
+    borderRadius:15,
     minWidth: 100,
     marginTop: 20,
     marginHorizontal: 20,
@@ -81,9 +74,15 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderRadius: 3,
   },
+  txt: {
+    color: '#fff',
+    width: 250,
+    fontSize: 19,
+    textAlign: 'center',
+    fontFamily: 'Chalkboard SE',
+    fontWeight: 'bold',
+  },
 });
 
 
 export default SignUp;
-=======
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8

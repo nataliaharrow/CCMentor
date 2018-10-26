@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Homepage from './Homepage';
@@ -10,24 +9,12 @@ import { StackNavigator, createSwitchNavigator } from 'react-navigation';
 class StartForm extends React.Component {
   render(){
     return(
-=======
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Homepage from './Homepage';
-import StartForm from './StartForm';
-
-export default class App extends React.Component {
-
-  render() {
-    return (
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
       <View style={styles.container}>
         <View style={styles.logoContainer}>
           <Image
           source={require('./mentor.png')}/>
           <Text style={styles.welcomeMsg}>A student-mentor matching app</Text>
         </View>
-<<<<<<< HEAD
         <View style={styles.container1}>
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('SignInScreen')}
@@ -39,17 +26,12 @@ export default class App extends React.Component {
             style={styles.btn}>
             <Text style={styles.txt}>Sign Up</Text>
           </TouchableOpacity>
-=======
-        <View style={styles.formContainer}>
-          <StartForm/>
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
         </View>
       </View>
     );
   }
 }
 
-<<<<<<< HEAD
 const AppNavigator = createSwitchNavigator ({
   HomeScreen: StartForm,
   SignUpScreen: SignUp,
@@ -68,8 +50,6 @@ export default class App extends React.Component {
   }
 }
 
-=======
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -91,7 +71,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     opacity: 0.8,
   },
-<<<<<<< HEAD
   container1: {
     padding: 20,
     marginBottom: 100,
@@ -102,6 +81,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     height: 50,
     justifyContent: 'center',
+    borderRadius:15,
   },
   txt: {
     color: '#fff',
@@ -111,6 +91,4 @@ const styles = StyleSheet.create({
     fontFamily: 'Chalkboard SE',
     fontWeight: 'bold',
   },
-=======
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
 });
