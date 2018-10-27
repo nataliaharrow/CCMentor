@@ -16,7 +16,7 @@ class SignUp extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>SIGN UP</Text>
-        <View>
+        <View style={styles.allinputs}>
           <TextInput
             style={styles.input}
             placeholder="First name"
@@ -35,18 +35,18 @@ class SignUp extends React.Component {
           />
         </View>
         <View style={styles.checkbox}>
-          <View>
-            <CheckBox
-              title='Student'
-              checked={this.state.checked}
-            />
-          </View>
-          <View>
-            <CheckBox
-              title='Mentor'
-              checked={this.state.checked}
-            />
-          </View>
+        <View>
+          <CheckBox
+            title='Student'
+            checked={this.state.checked}
+          />
+        </View>
+        <View>
+          <CheckBox
+            title='Mentor'
+            checked={this.state.checked}
+          />
+        </View>
         </View>
         <View>
           <TouchableOpacity
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    marginBottom: 50,
+    marginBottom: 20,
+    fontSize: 17,
   },
   welcomeMsg: {
     color: '#fff',
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
   btn: {
     backgroundColor:'#1c92d2',
     paddingHorizontal:30,
-    marginTop: 80,
+    marginTop: 20,
     marginBottom:20,
     height: 50,
     justifyContent: 'center',
@@ -119,6 +120,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     paddingHorizontal: 10,
     paddingVertical: 5,
+    textAlign: 'center',
   },
   txt: {
     color: '#fff',
@@ -131,12 +133,10 @@ const styles = StyleSheet.create({
   loginoption: {
     color: '#607D8B'
   },
-  checkbox : {
-    flex: 1,
+  checkbox: {
     flexDirection: 'row',
-    width: 200,
-    height: 10,
-    justifyContent: 'center',
+    marginTop: 20,
+    marginBottom:20,
   },
 });
 
