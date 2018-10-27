@@ -86,9 +86,9 @@ const styles = StyleSheet.create({
   txt: {
     color: '#fff',
     width: 250,
-    fontSize: 19,
+    fontSize: 17,
     textAlign: 'center',
-    fontFamily: 'Chalkboard SE',
-    fontWeight: 'bold',
+    fontFamily: 'Arial',
+    fontWeight: 'normal',
   },
 });
