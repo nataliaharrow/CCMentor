@@ -50,7 +50,7 @@ class SignUp extends React.Component {
         </View>
         <View>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('HomeScreen')}
+            onPress={() => this.props.navigation.navigate('SignUpStudent')}
             style={styles.btn}>
             <Text style={styles.txt}>Get started</Text>
           </TouchableOpacity>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     borderRadius:15,
   },
   btn2: {
-    backgroundColor:'#1c92d2',
+    backgroundColor:'#004d99',
     paddingHorizontal:30,
     marginTop: 20,
     marginBottom:20,
@@ -139,6 +139,5 @@ const styles = StyleSheet.create({
     marginBottom:20,
   },
 });
-
 
 export default SignUp;

@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Homepage from './Homepage';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
+import CompleteProfileStudent from './CompleteProfileStudent';
 import { StackNavigator, createSwitchNavigator } from 'react-navigation';
 
 class StartForm extends React.Component {
@@ -19,7 +20,7 @@ class StartForm extends React.Component {
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('SignInScreen')}
             style={styles.btn}>
-            <Text style={styles.txt}>Login</Text>
+            <Text style={styles.txt}>Log In</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('SignUpScreen')}
@@ -35,7 +36,8 @@ class StartForm extends React.Component {
 const AppNavigator = createSwitchNavigator ({
   HomeScreen: StartForm,
   SignUpScreen: SignUp,
-  SignInScreen: SignIn
+  SignInScreen: SignIn,
+  SignUpStudent: CompleteProfileStudent,
   },{
     initialRouteName: 'HomeScreen',
   }

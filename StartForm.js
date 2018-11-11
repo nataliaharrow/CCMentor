@@ -1,13 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TextInput, TouchableOpacity } from 'react-native';
-<<<<<<< HEAD
+
 import { StackNavigator, SwitchNavigator } from 'react-navigation';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-
-
-class StartForm extends React.Component {
-=======
 
 class StartForm extends React.Component {
 
@@ -17,21 +13,19 @@ class StartForm extends React.Component {
 
   showSignUp = () => {
     this.setState(prevState => ({showContacts: !prevState.showContacts}))
-  } 
+  }
 
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
   render(){
     return(
       <View style={styles.container}>
         <TouchableOpacity style={styles.btn}>
-          <Text style={styles.txt}>Login</Text>
+          <Text style={styles.txt}>Log In</Text>
         </TouchableOpacity>
-<<<<<<< HEAD
+
         <TouchableOpacity
           style={styles.btn}>
-=======
+
         <TouchableOpacity style={styles.btn} onPress={() => this.showSignUp()}>
->>>>>>> 91c80069da0063052a7b3c5c7dd180f9d88fdce8
           <Text style={styles.txt}>Sign Up</Text>
         </TouchableOpacity>
       </View>
