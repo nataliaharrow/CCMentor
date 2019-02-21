@@ -40,7 +40,7 @@ class SignIn extends React.Component {
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('HomeScreen')}
             style={styles.btn2}>
-            <Text style={styles.txt}>Sign up with Google</Text>
+            <Text style={styles.txt}>Sign up with Google!</Text>
           </TouchableOpacity>
         </View>
         <View>
